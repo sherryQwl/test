@@ -1,0 +1,64 @@
+﻿1、实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤
+
+答：①mkdir git项目;
+    ②cd git项目;
+    ③git init;
+    ④touch 1.txt;
+    ⑤git add .;
+    ⑥git commit -m 新建了1.txt文件
+
+
+2、在公司里面，我自己在github中创建了一个空仓库(地址：origin)，如何实现往这个空仓库中提交代码
+
+答：①git init;   ②touch 1.html;  ③git add .;   ③git commit -m 创建了一个1.html文件； ④git push origin master
+
+
+
+3、在公司里面，领导让我对某个github的项目(地址：origin)进行二次开发，比如我要开发一个新功能(比如添加test.html文件)，
+   我应该执行哪些步骤从而将test.html文件提交到服务器中
+
+答：①mkdir app;    ②cd app;               ③git init;     ④git pull origin master;               ⑤touch test.html;   
+    ⑥git add .;    ⑦git commit -m  添加test.html文件;     ⑧git push origin master;
+
+
+
+4、如果一个文件(1.txt)已经位于服务器仓库中，那么应该如何从服务器仓库中把该文件删除
+
+答：①git rm 1.txt;   ②git commit -m 删除1.txt；  ③git push 服务器仓库地址 master;
+
+
+
+5、版本回滚操作的命令格式
+
+答：①git reflog(获取版本号)；     ②git reset --hard 版本号；
+
+
+
+6、设置全局的用户名为：ccc，设置全局的邮箱为：ccc@qq.com
+
+答：git config --global user.name ccc;
+    git config --global user.email ccc@qq.com;
+
+
+7、在git commit的时候，如果没有输入-m选项，怎么操作才能正确的完成本次提交？
+
+答：用vi编辑器，按i键进入编辑模式，编辑日志完成之后，按esc键退出编辑模式，最后输入:wq保存退出；
+
+
+8、保存一个服务器地址；删除保存的服务器地址
+
+答：git remote add origin 服务器地址;
+    git remote remove origin;
+
+
+
+
+
+
+
+
+
+
+
+
+
